@@ -55,6 +55,7 @@ The project aims to deliver a real-time search feature allowing users to search 
 - **Debounced search for better performance**
 - **SQL query sanitization to secure app from SQL injection attacks**
 - **Recent search activities page**
+- **Use Levenshtein distance algorithm to summarize complete search**
 - **IP tracking for search queries**
 - **User-friendly search Interface**
 - **Real-time user input recording**
