@@ -38,8 +38,8 @@ The project aims to deliver a real-time search feature allowing users to search 
 <details>
 <summary>Client</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">Vanilla JavaScript</a></li>
-    <li><a href="https://rubyonrails.org/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Vanilla JavaScript</a></li>
   </ul>
 </details>
 <details>
