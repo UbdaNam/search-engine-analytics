@@ -1,0 +1,17 @@
+<div class="articles-wrapper">
+  <div class="articles-header">
+    <h1>Articles</h1>
+    <%= link_to "Go to Recent Searches", search_queries_path, class: "button" %>
+  </div>
+  
+  <div class="articles-content">
+    <%= form_tag articles_path, method: :get, data: { turbo_frame: "articles-list", turbo_action: "advance", 
+    controller: 'search-form', action: "input->search-form#submit" } do |form| %>
+      <%= text_field_tag "query", params[:query].presence || "", placeholder: "Search...", autocomplete: "off", autofocus: "on" %>
+    <% end %>
+    
+    <%= turbo_frame_tag "articles-list" do %>
+      <%= render partial: "list", locals: { articles: @articles } %>
+    <% end %>
+  </div>
+</div>
