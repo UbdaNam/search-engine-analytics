@@ -66,7 +66,7 @@ The project aims to deliver a real-time search feature allowing users to search 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://search-engine-8jk0.onrender.com)
+- [Live Demo Link](https://search-engine-analytics-production.up.railway.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
