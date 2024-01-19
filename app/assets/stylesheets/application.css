@@ -16,23 +16,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
   color: #fafafa;
   background-color: #32383e;
   padding: 1rem 2rem;
-}
-
-.button {
-  padding: 0.5rem 1rem;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #2980b9;
 }
 
 .articles-header {
@@ -139,7 +125,9 @@ li {
 }
 
 li::before {
+  /* stylelint-disable csstree/validator */
   content: counters(index, '.', decimal-leading-zero);
+  /* stylelint-enable csstree/validator */
   font-size: 1.5rem;
   text-align: right;
   font-weight: bold;
