@@ -1,0 +1,13 @@
+<div class="search-list-wrapper">
+  <div class="search-list-header">
+    <h1>"Your recent searches"</h1>
+  </div>
+  <div class="search-list-content">
+    <%= render partial: "list", locals: { searchQueries: @searchQueries } %>
+  </div>
+
+  <div class="go-back-button">
+    <%= link_to "Go Back to Articles", articles_path, class: "button" %>
+  </div>
+
+</div>
