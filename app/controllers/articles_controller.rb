@@ -4,12 +4,12 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.search(params)
 
-    if current_search_query.present?
-      if should_update?(last_search, current_search_query)
-        last_search.update(query: current_search_query)
-      elsif should_create_new_search?(last_search, current_search_query)
-        SearchQuery.create(query: current_search_query, user: current_user)
-      end
+    return unless current_search_query.present?
+
+    if should_update?(last_search, current_search_query)
+      last_search.update(query: current_search_query)
+    elsif should_create_new_search?(last_search, current_search_query)
+      SearchQuery.create(query: current_search_query, user: current_user)
     end
   end
 
@@ -20,6 +20,6 @@ class ArticlesController < ApplicationController
   end
 
   def current_search_query
-    @current_search ||= params[:query]&.squish
+    @current_search_query ||= params[:query]&.squish
   end
 end
