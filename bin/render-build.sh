@@ -5,4 +5,5 @@ set -o errexit
 bundle install
 bundle exec rails assets:precompile
 bundle exec rails assets:clean
-bundle exec rails db:migrate:seed:reset
+bundle exec rails db:migrate:reset
+bundle exec rails db:reset
