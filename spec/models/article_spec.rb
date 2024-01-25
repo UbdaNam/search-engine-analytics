@@ -7,7 +7,7 @@ describe Article, type: :model do
     expect(article1).to be_an_instance_of(Article)
   end
 
-  context "With query having search term" do
+  context 'With query having search term' do
     it 'Should filter articles matching the search term' do
       expect(Article.search(query: 'Title')).to eq([article1])
     end
@@ -17,7 +17,7 @@ describe Article, type: :model do
     end
   end
 
-  context "With query having empty search term" do
+  context 'With query having empty search term' do
     it 'Should filter articles matching the search term' do
       expect(Article.search(query: '')).to eq(Article.all)
     end
