@@ -3,6 +3,9 @@ name: Linters
 on: pull_request
 
 env:
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: ''
+  POSTGRES_DB: postgres
   FORCE_COLOR: 1
 
 jobs:
