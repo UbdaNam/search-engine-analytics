@@ -110,6 +110,7 @@ rails db:create
 
 ```Migrate db
 rails db:migrate
+rails db:migrate RAILS_ENV=test
 ```
 
 ```Populate db
@@ -118,6 +119,10 @@ rails db:seed
 
 ```Start server
 rails s
+```
+
+```Run tests
+rspec spec
 ```
 
 <!-- AUTHORS -->
